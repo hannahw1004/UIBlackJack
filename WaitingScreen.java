@@ -78,8 +78,8 @@ public class WaitingScreen {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 //playerWaitingScreen();
-                //dealerWaitScreen();
-                waitingforGame();
+                dealerWaitScreen();
+                //waitingforGame();
             }
         });
 
