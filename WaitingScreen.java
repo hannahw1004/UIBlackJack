@@ -14,7 +14,7 @@ public class WaitingScreen {
         p.setBounds(0,0,900,650);
         p.setLayout(null);
 
-        waitingDealer = new JLabel("Waiting for Dealer Acceptance...");
+        waitingDealer = new JLabel("Waiting for Player...");
         waitingDealer.setFont(new Font("Verdana", Font.PLAIN, 25));
         waitingDealer.setBounds(300,100,400,400);
 
@@ -73,13 +73,12 @@ public class WaitingScreen {
         gFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
      public static void main(String[] args){
-        
 
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 //playerWaitingScreen();
                 dealerWaitScreen();
-                //waitingforGame();
+                waitingforGame();
             }
         });
 
